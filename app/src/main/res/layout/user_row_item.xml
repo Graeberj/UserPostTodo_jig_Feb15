@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/idTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="1"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/nameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Leanne Graham"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/usernameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Bret"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/emailTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Sincere@april.biz"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/streetTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Kulas Light"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/suiteTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Apt. 556"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cityTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Gwenborough"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/zipvodeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="92998-3874"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/latitudeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="-37.3159"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/longitudeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="81.1496"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/phoneTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="1-770-736-8031"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/websiteTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Gwenborough"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/companyNameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Romaguera-Crona"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/catchPhraseTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="ulti-layered client-server neural-net"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/bsTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="harness real-time e-markets"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -2,10 +2,13 @@ package com.example.userposttodo_jig_feb15.di
 
 import com.example.userposttodo_jig_feb15.data.local.dao.PostDao
 import com.example.userposttodo_jig_feb15.data.local.dao.TodoDao
+import com.example.userposttodo_jig_feb15.data.local.dao.UserDao
 import com.example.userposttodo_jig_feb15.data.remote.service.PostService
 import com.example.userposttodo_jig_feb15.data.remote.service.TodoService
+import com.example.userposttodo_jig_feb15.data.remote.service.UserService
 import com.example.userposttodo_jig_feb15.data.repository.PostRepository
 import com.example.userposttodo_jig_feb15.data.repository.TodoRepository
+import com.example.userposttodo_jig_feb15.data.repository.UserRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -34,5 +37,13 @@ object RepositoryModule {
         return TodoRepository(todoService, todoDao)
     }
 
+    @Singleton
+    @Provides
+    fun providesUserRepository(
+        userService: UserService,
+        userDao: UserDao
+    ): UserRepository {
+        return UserRepository(userService, userDao)
+    }
 }
 

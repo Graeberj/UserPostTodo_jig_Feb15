@@ -2,6 +2,7 @@ package com.example.userposttodo_jig_feb15.di
 
 import com.example.userposttodo_jig_feb15.data.remote.service.PostService
 import com.example.userposttodo_jig_feb15.data.remote.service.TodoService
+import com.example.userposttodo_jig_feb15.data.remote.service.UserService
 import com.example.userposttodo_jig_feb15.utils.Constants.Companion.BASE_URL
 import com.example.userposttodo_jig_feb15.utils.Constants.Companion.TIMEOUT
 import com.squareup.moshi.Moshi
@@ -56,5 +57,10 @@ object NetworkModule {
     @Singleton
     fun providesTodoService(retrofit: Retrofit): TodoService {
         return retrofit.create(TodoService::class.java)
+    }
+    @Provides
+    @Singleton
+    fun providesUserService(retrofit: Retrofit): UserService {
+        return retrofit.create(UserService::class.java)
     }
 }

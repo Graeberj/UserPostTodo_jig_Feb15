@@ -4,8 +4,10 @@ import android.content.Context
 import androidx.room.Room
 import com.example.userposttodo_jig_feb15.data.local.PostDatabase
 import com.example.userposttodo_jig_feb15.data.local.TodoDatabase
+import com.example.userposttodo_jig_feb15.data.local.UserDatabase
 import com.example.userposttodo_jig_feb15.data.local.dao.PostDao
 import com.example.userposttodo_jig_feb15.data.local.dao.TodoDao
+import com.example.userposttodo_jig_feb15.data.local.dao.UserDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -44,8 +46,25 @@ object DatabaseModule {
             "todo_database"
         ).build()
     }
+
     @Provides
     fun providesTodoDao(database: TodoDatabase): TodoDao {
         return database.getTodoDao()
+    }
+    @Provides
+    @Singleton
+    fun providesUserDatabase(
+        @ApplicationContext context: Context
+    ): UserDatabase {
+        return Room.databaseBuilder(
+            context,
+            UserDatabase::class.java,
+            "todo_database"
+        ).build()
+    }
+
+    @Provides
+    fun providesUserDao(database: UserDatabase): UserDao {
+        return database.getUserDao()
     }
 }
